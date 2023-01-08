@@ -1,0 +1,120 @@
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    body {
+        margin: 0px 20px;
+    } 
+    .logo {
+        width: 130px;
+    }
+    header {
+        background-color: green;
+        position: fixed;
+        top: 0;
+        left: 0%;
+        right: 0;
+        z-index: 9999;
+    }
+    .checkLabel {
+        display: block;
+        cursor: pointer;
+    } 
+    nav ul {
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        top: 70px;
+        right: -100%;
+        background-color: rgba(38, 0, 255, 0.866);
+        text-align: center;
+        transition: all .5s;
+        display: block;
+    }
+    nav ul li {
+        text-align: center;
+        margin: 0;
+        padding: 20px 0px;
+    }
+    nav ul li a{
+        text-align: center;
+        color: white;
+        margin: 200px;
+    }
+
+    #check:checked ~ ul {
+        right: 0;
+    }
+    #check:checked ~ .checkLabel  i::before {
+        content: "\f00d";
+    }
+
+    /* slider */
+    slider-section {
+        display: block;
+        margin-top: 100px;
+    }
+    .slider-img {
+        width: 300px;
+        margin-left: 50px;
+    }
+    /* .product-section */
+    .product-section {
+        height: auto;
+    }
+    .product {
+        width: 330px;
+        height: 200px;
+        margin: 0;
+        margin-top: 130px;
+    }
+    .product-top, .product-bottom  {
+        display: block;
+    }
+    .product-img-1 {
+        left: 40px;
+    }
+
+    /* benefit-section  */
+    benefit-section {
+        display: block;
+        margin: 0;
+    }
+    .us {
+        margin: 0;
+    }
+    .gg {
+        margin: 0;
+    }
+    .healthy {
+        font-size: 18px;
+        margin: 0;
+        line-height: 25px;
+    }
+    .healthy-img2 {
+        border-radius: 10px;
+        width: 200px;
+    }
+    .check-healthy {
+        margin-left: 15px;
+    }
+
+    /* footer */
+    footer {
+        display: block;
+    }
+    footer h2 {
+        margin: 0;
+        padding-top: 50px;
+        padding-bottom: 10px;
+    }
+    .so-abo {
+        margin: 0;
+        padding: 0;
+    }
+    .social, .about, .featrues, .mambership{
+        margin: 0;
+        padding: 0;
+    }
+    .copy-right {
+        margin: 50px;
+      }
+}
